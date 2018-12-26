@@ -1,9 +1,9 @@
-     1. Opis
+## 1. Opis
 Woda do napełnienia zbiornika ZB1 jest pompowana przez pompę P1, a następnie wylewana przez zawór Z1. Ilość wylewanej wody nie jest stała, jest regulowana ręczne przez Operatora zbiorniku (prawdopodobnie, zgodnie z żądaniami konsumentów).
 
 Aby uniknąć przepełnienia zbiornika i / lub opróżniania rury, zbiornik jest wyposażony w czujniki minimalnego i maksymalnego poziomu wody.
 
-     2. Algorytm sterowania
+## 2. Algorytm sterowania
 
 Warunki początkowe: zbiornik wody jest pusty, zawór wyboru wody jest zamknięty.
 
@@ -13,9 +13,9 @@ Operator może ręcznie zmienić przepustowość zaworu, podczas gdy układ ster
 
 Naciśnięcie przycisku STOP powoduje wyłączenie pompy i zamknięcie zaworu.
 
-     3. Wejścia/wyjścia, registry sterownika M221
+## 3. Wejścia/wyjścia, registry sterownika M221
 
-**Inputs**:
+    Inputs:
 
 | Adres | Opis |
 | ----- | ---- |
@@ -25,21 +25,21 @@ Naciśnięcie przycisku STOP powoduje wyłączenie pompy i zamknięcie zaworu.
 | %I0.6 | Przycisk STOP |
 | %I0.7 | Przycisk START |
 
-**Outputs**:
+    Outputs:
 
 | Adres | Opis |
 | ----- | ---- |
 | %Q0.6 | Sterowanie zaworem odpływu wody (zawarte - otwarte) |
 | %Q0.7 | Sterowanie pracą pompy (ON - OFF) |
 
-**Analog**:
+    Analog:
 
 | Adres | Opis |
 | ----- | ---- |
 | %IW0.0 | Wydajność zaworu (ręczne sterowanie zaworem)  |
 | %IW0.1 | Wydajność pompy (ręczne sterowanie pompą) |
 
-**Registry**: 
+    Registry:
 
 | Adres | Opis |
 | ----- | ---- |
@@ -60,7 +60,7 @@ Naciśnięcie przycisku STOP powoduje wyłączenie pompy i zamknięcie zaworu.
 | %M123 | Stan czujnika minimalnego poziomu wody |
 | %M124 | Stan czujnika maksymalnego poziomu wody |
 
-     4. Opis programy
+## 4. Opis programy
 
 Program składa się z 4 POU.
 
@@ -72,7 +72,7 @@ POU 3. „Emulator tłoczenia i wylewania” zawiera obliczenia poziomu wody w z
 
 POU 4. „Emulator Histerezy Pływaków” emuluje zachowanie prawdziwych czujników poziomu wody.
 
-     5. Funkcjonowanie programy
+## 5. Funkcjonowanie programy
 
 5.1. Połącz (Launch) i uruchom (RUN) symulator sterownika, na przykład – TM221M16R/G.
 
