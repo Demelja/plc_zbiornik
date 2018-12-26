@@ -1,6 +1,8 @@
 ## 1. Opis
 Woda do napełnienia zbiornika ZB1 jest pompowana przez pompę P1, a następnie wylewana przez zawór Z1. Ilość wylewanej wody nie jest stała, jest regulowana ręczne przez Operatora zbiorniku (prawdopodobnie, zgodnie z żądaniami konsumentów).
 
+<p align="center"> <img width="460" height="300" src="zbiornik.png"> </p>
+
 Aby uniknąć przepełnienia zbiornika i / lub opróżniania rury, zbiornik jest wyposażony w czujniki minimalnego i maksymalnego poziomu wody.
 
 ## 2. Algorytm sterowania
@@ -8,6 +10,8 @@ Aby uniknąć przepełnienia zbiornika i / lub opróżniania rury, zbiornik jest
 Warunki początkowe: zbiornik wody jest pusty, zawór wyboru wody jest zamknięty.
 
 Urządzenie włącza się, naciskając przycisk START. Pompa dostarcza wodę do zbiornika. Po osiągnięciu poziomu „min-up” otwiera się zawór wylewania wody. Jeżeli pobór wody przekroczy natężenie przepływu, zawór zamknie się ponownie po osiągnięciu poziomu „min-down”. W przeciwnym razie zbiornik będzie nadal napełniany wodą, a gdy poziom osiągnie poziom „max-up”, pompa wyłączy się, a zawór pozostanie otwarty. Pompa włączy się ponowie, gdy osiągnie „max-down” poziom.
+
+<p align="center"> <img width="460" src="hysterza.png"> </p>
 
 Operator może ręcznie zmienić przepustowość zaworu, podczas gdy układ sterowania nie pozwala na przelanie się zbiornika i / lub ewentualne uszkodzenie urządzenia w wyniku nagłej utraty wody w odprowadzanym rurociągu.
 
