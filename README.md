@@ -15,69 +15,50 @@ Naciśnięcie przycisku STOP powoduje wyłączenie pompy i zamknięcie zaworu.
 
      3. Wejścia/wyjścia, registry sterownika M221
 
-Inputs:
-Adres
-Opis
-%I0.3
-Czujnik minimalnego poziomu wody
-%I0.4
-Czujnik maksymalnego poziomu wody
-%I0.5
-Przełącznik PRACA - TEST
-%I0.6
-Przycisk STOP 
-%I0.7
-Przycisk START
-Outputs:
-Adres
-Opis
-%Q0.6
-Sterowanie zaworem odpływu wody (zawarte - otwarte)
-%Q0.7
-Sterowanie pracą pompy (ON - OFF)
-Analog:
-Adres
-Opis
-%IW0.0
-Wydajność zaworu (ręczne sterowanie zaworem) 
-%IW0.1
-Wydajność pompy (ręczne sterowanie pompą)
-Registry: 
-Adres
-Opis
-%M100
-RUN relay
-%M101
-STOP relay
-%M103
-Czujnik minimalnego poziomu wody
-%M104
-Czujnik maksymalnego poziomu wody
-%M105
-Tryb PRACA („1”) / TEST („0”)
-%M106
-Zawór odpływu wody (zawarte - otwarte)
-%M107
-Praca pompy (ON - OFF)
-%MW108
-Wydajność zaworu (wylewanie)
-%MW109
-Wydajność pompy (toczenie)
-%MW110
-Bieżący poziom wody w zbiorniku
-%MW111
-Górny limit czujnika maksymalnego poziomu wody (MAX-UP)
-%MW112
-Dolny limit czujnika maksymalnego poziomu wody (MAX-DOWN)
-%MW113
-Górny limit czujnika minimalnego poziomu wody (MIN-UP)
-%MW114
-Dolny limit czujnika minimalnego poziomu wody (MIN-DOWN)
-%M123
-Stan czujnika minimalnego poziomu wody
-%M124
-Stan czujnika maksymalnego poziomu wody
+**Inputs**:
 
+| Adres | Opis |
+| ----- | ---- |
+| %I0.3 | Czujnik minimalnego poziomu wody |
+| %I0.4 | Czujnik maksymalnego poziomu wody |
+| %I0.5 | Przełącznik PRACA - TEST |
+| %I0.6 | Przycisk STOP |
+| %I0.7 | Przycisk START |
+
+**Outputs**:
+
+| Adres | Opis |
+| ----- | ---- |
+| %Q0.6 | Sterowanie zaworem odpływu wody (zawarte - otwarte) |
+| %Q0.7 | Sterowanie pracą pompy (ON - OFF) |
+
+**Analog**:
+
+| Adres | Opis |
+| ----- | ---- |
+| %IW0.0 | Wydajność zaworu (ręczne sterowanie zaworem)  |
+| %IW0.1 | Wydajność pompy (ręczne sterowanie pompą) |
+
+**Registry**: 
+
+| Adres | Opis |
+| ----- | ---- |
+| %M100 | RUN relay |
+| %M101 | STOP relay |
+| %M103 | Czujnik minimalnego poziomu wody |
+| %M104 | Czujnik maksymalnego poziomu wody |
+| %M105 | Tryb PRACA („1”) / TEST („0”) |
+| %M106 | Zawór odpływu wody (zawarte - otwarte) |
+| %M107 | Praca pompy (ON - OFF) |
+| %MW108 | Wydajność zaworu (wylewanie) |
+| %MW109 | Wydajność pompy (toczenie) |
+| %MW110 | Bieżący poziom wody w zbiorniku |
+| %MW111 | Górny limit czujnika maksymalnego poziomu wody (MAX-UP) |
+| %MW112 | Dolny limit czujnika maksymalnego poziomu wody (MAX-DOWN) |
+| %MW113 | Górny limit czujnika minimalnego poziomu wody (MIN-UP) |
+| %MW114 | Dolny limit czujnika minimalnego poziomu wody (MIN-DOWN) |
+| %M123 | Stan czujnika minimalnego poziomu wody |
+| %M124 | Stan czujnika maksymalnego poziomu wody |
 
      4. Opis programy
 
